@@ -33,6 +33,6 @@ app.post("/", function(req, res){
 
 });
 
-app.listen(3000, function() {
-  console.log("Server up in port 3000");
+app.listen(process.env.PORT || 3000, function() {
+  console.log("Server is up");
 });
